@@ -36,7 +36,7 @@ def main():  # Define the main function
 
     # All outputs will form a mathematical proof process,
     # so the program can "Solve" math problems (only bisection method).
-    while abs(a-b) >= epsilon:  # Judge whether the absolute value of a-b is less than the accurate value.
+    while abs(a-b) >= epsilon:  # Judge whether the absolute value of a-b is less than the accuracy.
 
         c = (a+b)/2  # Get the midpoint.
         if c % 1 == 0:
