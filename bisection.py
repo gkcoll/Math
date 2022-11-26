@@ -25,7 +25,7 @@ def f(x):
 
 
 def main():  # Define the main function
-    epsilon = float(input("ε= "))  # Accurate value
+    epsilon = float(input("ε= "))  # Accuracy
     a = float(input("a="))  # Start of range
     b = float(input("b="))  # End of range
 
