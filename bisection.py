@@ -3,7 +3,7 @@ Description: The Implementation of Bisection Method by Python.
 Writed by @灰尘疾客
 Date: 2022/11/26
 """
-from math import log
+# from math import log
 
 
 def f(x):
