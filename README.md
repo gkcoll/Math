@@ -1,2 +1,2 @@
 # math
-Some mathematical algorithm that are written by myself.
+Some mathematical algorithm scripts that are written by myself.
