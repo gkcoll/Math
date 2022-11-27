@@ -66,8 +66,8 @@ def main():  # Define the main function
 
         # Output the zero point range.
         print("∴x₀∈""(" + str(a) + "," + str(b) + ")")
-        print("∵|" + str(a) + "-" + str(b) + "|"+" < "+str(epsilon))
-
+    
+    print("∵|" + str(a) + "-" + str(b) + "|"+" < "+str(epsilon))
     x = a
     if x % 1 == 0:
         x = int(x)
