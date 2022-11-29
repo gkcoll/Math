@@ -24,7 +24,11 @@ def f(x):
     return y
 
 
-def main():  # Define the main function
+def main():
+    '''
+    The main function of this program,
+    it can help you to solve the math prooblems about bisection method..
+    '''
     epsilon = float(input("ε= "))  # Accuracy
     a = float(input("a="))  # Start of range
     b = float(input("b="))  # End of range
@@ -59,15 +63,23 @@ def main():  # Define the main function
                 print("∴a=c=" + str(a))
                 break
             else:
+                # Give up use this↓
                 # If f(c) > 0, assign c to a and continue looping.
-                print("∵f(c)>0")
+                # print("∵f(c)>0")
+                
+                print("∵f(b)f(c)=" + str(f(b)) + "×" +
+                      str(f(c)) + "=" + str(f(b)*f(c)) + "<0")
                 a = c
                 print("∴a=c=" + str(a))
 
         # Output the zero point range.
         print("∴x₀∈""(" + str(a) + "," + str(b) + ")")
     
-    print("∵|" + str(a) + "-" + str(b) + "|"+" < "+str(epsilon))
+    # Add judge for control output. 2022/11/29
+    if abs(a - b) < epsilon:
+        print("∵|" + str(a) + "-" + str(b) + "|"+" < "+str(epsilon))
+        
+        
     x = a
     if x % 1 == 0:
         x = int(x)
