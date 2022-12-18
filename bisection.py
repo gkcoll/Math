@@ -25,7 +25,6 @@ def f(x:float) ->float:
 
 
 def legality(f, a, b):
-    # 定义函数f，搜索区间[a, b]，精度epsilon
     if f(a) * f(b) >= 0:
         print("Error: f(a) and f(b) have the same sign!")
         return False
